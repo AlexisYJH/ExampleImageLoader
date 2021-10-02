@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageAdapter mImageAdapter;
     private boolean mIsGridViewIdle = true;
     private boolean mCanGetBitmapFromNetwork = true;
-    private int mImageWidth;
+    //private int mImageWidth;
 
     private ArrayList<String> mUrlList = new ArrayList<>();
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        mImageWidth = 100;
+        //mImageWidth = 100;
         //showTip();
     }
 
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            ViewHolder viewHolder = null;
+            ViewHolder viewHolder;
             if (convertView == null) {
                 convertView = mInflater.inflate(R.layout.image_list_item, parent, false);
                 viewHolder = new ViewHolder();

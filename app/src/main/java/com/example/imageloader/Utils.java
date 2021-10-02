@@ -10,9 +10,6 @@ import java.io.OutputStream;
 
 public class Utils {
     public static boolean isWifi(Context mContext) {
-        if (true) {
-            return true;
-        }
         ConnectivityManager connectivityManager = (ConnectivityManager) mContext
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info= connectivityManager.getActiveNetworkInfo();
